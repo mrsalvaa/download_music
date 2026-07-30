@@ -1,26 +1,3 @@
-#!/usr/bin/env python3
-"""
-descargar_musica.py
-
-Lee un archivo "videos.txt" (ubicado en la misma carpeta que este script,
-un nombre de cancion/video por linea), busca en YouTube el resultado
-mas relevante para cada linea y descarga el audio en MP3 a 320kbps
-(o la maxima calidad posible), dejando los archivos en la carpeta raiz
-con el formato "Banda - Cancion.mp3".
-
-Dependencias:
-    - yt-dlp   (pip install yt-dlp --break-system-packages)
-    - ffmpeg   (debe estar instalado en el sistema)
-
-Uso:
-    1) Crea "videos.txt" junto a este script con una busqueda por linea:
-         Queen - Bohemian Rhapsody
-         Soda Stereo De Musica Ligera
-         ...
-    2) python3 descargar_musica.py
-       (opcionalmente: python3 descargar_musica.py otro_archivo.txt)
-"""
-
 import logging
 import sys
 from pathlib import Path
